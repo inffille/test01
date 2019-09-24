@@ -1,6 +1,6 @@
 from graphics import *
 
-win = GraphWin("Test1", 300, 300)	#create window of size 300x300
+win = GraphWin("Non-test!", 400, 340)	#create window of size 300x300
 
 
 c = Circle(Point(50, 50), 50)		#create object c - circle with center in (50, 50) and radius 50
