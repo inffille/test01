@@ -12,14 +12,18 @@ class Display:
 
 		self.root.mainloop()
 
-	def process_input(self):	
-#		op1, op2, symbol = self.parse_input()
-#		res = self.present_operation(op1, op2, symbol)
-#		return res
-		pass 
+	def process_input(self):
+		string = self.entry.get()	
+		op1,  symbol, op2 = self.parse_input(string)
+		res = self.present_operation(op1, op2, symbol)
+		return res
+		  
 	
-	def parse_input(self):
-		pass
+	def parse_input(self, string):
+		if len(string.split()) == 3:
+			return string.split()
+		else:
+			raise Exception('You entered wrong number of parameters')
 
 	def present_operation(self, op1, op2, symbol):
 		n1 = number.Number(op1)
