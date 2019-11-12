@@ -1,7 +1,7 @@
 class Number:
-	def __init__(self, value, sign):
+	def __init__(self, value):
 		self.value = value
-		self.sign = sign
+#		self.sign = sign
 		self.type = type(self.value)
 		if self.type not in (int, float):
 			self.type = 'other'

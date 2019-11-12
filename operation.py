@@ -19,7 +19,7 @@ class Plus(Operation):
 		super().__init__('+',operand1,operand2)
 	
 	def result(self):
-		return self.entries[0]+self.entries[1]
+		return self.entries[0].value+self.entries[1].value
 	
 	def print_result(self):
 		return self.get_op() + '=' + str(self.result())
